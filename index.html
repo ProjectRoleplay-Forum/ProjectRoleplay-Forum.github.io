@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Server #1 | DE - Forum Nachbau</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #f9f9f9; color: #111; }
+    a { text-decoration: none; color: inherit; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background: #fff; border-bottom: 1px solid #ddd; }
+    header .logo { font-weight: 700; font-size: 1.2em; color: #5c3aff; }
+    header nav a { margin: 0 10px; color: #333; font-weight: 500; }
+    header nav a:hover { color: #5c3aff; }
+    header .user-actions { display: flex; align-items: center; }
+    header .user-actions a { margin-left: 15px; font-weight: 500; color: #333; }
+    main { max-width: 1000px; margin: 20px auto; padding: 0 20px; }
+    .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: #555; }
+    .breadcrumb a { color: #5c3aff; }
+    .forum-list { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    .forum-item { display: flex; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #eee; align-items: center; cursor: pointer; transition: background 0.2s; }
+    .forum-item:hover { background: #f3f3f3; }
+    .forum-left { display: flex; align-items: center; }
+    .forum-icon { width: 35px; height: 35px; background: #eee; display: flex; justify-content: center; align-items: center; border-radius: 5px; margin-right: 15px; font-size: 1.1em; }
+    .forum-name { font-weight: 600; margin-right: 10px; }
+    .forum-badge { background: #ff2e63; color: #fff; font-size: 0.7em; padding: 2px 6px; border-radius: 4px; }
+    .forum-stats { text-align: right; font-size: 0.85em; color: #555; }
+    .forum-stats div { margin-bottom: 2px; }
+    .forum-last { font-size: 0.8em; color: #999; }
+    .badge-important { background: red; color: white; padding: 2px 5px; border-radius: 3px; margin-left: 5px; font-size: 0.7em; }
+    .badge-on { background: orange; color: white; padding: 2px 5px; border-radius: 3px; margin-left: 5px; font-size: 0.7em; }
+    .badge-reviewed { background: lightgreen; color: black; padding: 2px 5px; border-radius: 3px; margin-left: 5px; font-size: 0.7em; }
+    .badge-pending { background: yellow; color: black; padding: 2px 5px; border-radius: 3px; margin-left: 5px; font-size: 0.7em; }
+</style>
+</head>
+<body>
 
+<header>
+    <div class="logo">GRAND RP</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Forums ▼</a>
+        <a href="#">What's New ▼</a>
+        <a href="#">Members ▼</a>
+        <a href="#">Grand Wiki</a>
+    </nav>
+    <div class="user-actions">
+        <a href="#">Log in</a>
+        <a href="#">Register</a>
+    </div>
+</header>
+
+<main>
+    <div class="breadcrumb">
+        <a href="#">Home</a> &gt; <a href="#">Forums</a> &gt; Game Section
+    </div>
+
+    <h2>Server #1 | DE</h2>
+
+    <div class="forum-list">
+
+        <div class="forum-item">
+            <div class="forum-left">
+                <div class="forum-icon">📄</div>
+                <span class="forum-name">Server-Regeln</span>
+                <span class="forum-badge">NEW</span>
+            </div>
+            <div class="forum-stats">
+                <div>14 Threads | 22 Messages</div>
+                <div class="forum-last">IMPORTANT Allgemeine Regeln · Fabian Grace</div>
+            </div>
+        </div>
+
+        <div class="forum-item">
+            <div class="forum-left">
+                <div class="forum-icon">📄</div>
+                <span class="forum-name">Beschwerden</span>
+                <span class="forum-badge">NEW</span>
+            </div>
+            <div class="forum-stats">
+                <div>150.3K Threads | 360.8K Messages</div>
+                <div class="forum-last">On consideration Kulanzantrag/Admin · Paul Flair</div>
+            </div>
+        </div>
+
+        <div class="forum-item">
+            <div class="forum-left">
+                <div class="forum-icon">📄</div>
+                <span class="forum-name">Bewerbungen</span>
+                <span class="forum-badge">NEW</span>
+            </div>
+            <div class="forum-stats">
+                <div>5.7K Threads | 26.6K Messages</div>
+                <div class="forum-last">Reviewed Bewerbung zum Leader d… · Marc Wynn</div>
+            </div>
+        </div>
+
+        <!-- Weitere Foren können hier nach gleichem Muster hinzugefügt werden -->
+
+    </div>
+</main>
+
+<script>
+    document.querySelectorAll('.forum-item').forEach(item => {
+        item.addEventListener('click', () => {
+            alert('Du hast auf ' + item.querySelector('.forum-name').innerText + ' geklickt!');
+        });
+    });
+</script>
+
+</body>
+</html>
