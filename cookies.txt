@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+de-forum.unrealrp.com	TRUE	/	FALSE	1999999999	xf_csrf	ZekzSGGU0hT6mxAa
+de-forum.unrealrp.com	TRUE	/	FALSE	1999999999	xf_session	iEareB7-nKkygzNquug5Y1OosrwMFLJ2
+de-forum.unrealrp.com	TRUE	/	FALSE	1999999999	xf_style_id	18
+
